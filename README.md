@@ -1,7 +1,18 @@
 # StrToMachineNmae
 
-Convert an string into a machine name with selected separator: `Foo bar baz faz` → `foo_bar_baz_faz`
+> Convert an string to machine name with selected separator: `Foo bar baz faz` → `foo_bar_baz_faz`
 
+### Cases you may need this for:
+* To generate clean url alias for you articles from the title for example
+```js
+const urlAlias = strToMachinename('My awesome article title', '-');
+//=> my-awesome-article-title
+```
+* or to generate clean username from first name and last name of your user entity. 
+```js
+const username = strToMachinename('First name ' + 'Last Name', '_');
+//=> first_name_last_name
+```
 
 
 ## Installation
@@ -25,6 +36,26 @@ strToMachinename('C\'est une phrase française avec des accenté éàçàçéì�
 strToMachinename('C\'est une phrase française avec des accenté éàçàçéìù', '/');
 //=> 'cest/une/phrase/francaise/avec/des/accente/eacaceiu'
 ```
+
+**Note:** The following punctuations will be removed ***. , # ! $ % ^ & * ; : { } = ` ~ ( ) " '***
+
+
+## API
+
+### strToMachinename(input, separator)
+
+#### input
+
+Type: `string`
+
+String to convert.
+
+#### separator
+
+Type: `'-' | '_' | '/'`
+
+Separator used for conversion.
+
 
 ## Contributing
 
