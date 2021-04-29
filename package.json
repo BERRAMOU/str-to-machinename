@@ -4,7 +4,7 @@
   "description": "Convert an string into a machine name with selected separator: `Foo bar baz faz` → `foo_bar_baz_faz`",
   "main": "index.js",
   "scripts": {
-    "test": "xo && ava && tsd"
+    "test": "xo && ava"
   },
   "author": "Azz-eddine BERRAMOU <azedine.berramou@gmail.com>",
   "license": "MIT",
@@ -25,7 +25,6 @@
   ],
   "devDependencies": {
     "ava": "^1.4.1",
-    "tsd": "^0.7.1",
     "xo": "^0.24.0"
   }
 }
