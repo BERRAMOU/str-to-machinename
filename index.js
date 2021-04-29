@@ -8,13 +8,11 @@
 *	@returns {string} Converted string.
 */
 const strToMachineName = (input, separator) => {
-	const acceptedSeparators = ['-', '_', '/'];
-
 	if (typeof input !== 'string') {
 		throw new TypeError('Expected a string');
 	}
 
-	if (!acceptedSeparators.includes(separator)) {
+	if (!['-', '_', '/'].includes(separator)) {
 		throw new TypeError('Expected one of the following separator -, _, /');
 	}
 
