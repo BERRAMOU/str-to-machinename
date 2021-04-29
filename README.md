@@ -3,12 +3,12 @@
 > Convert an string to machine name with selected separator: `Foo bar baz faz` → `foo_bar_baz_faz`
 
 ### Cases you may need this for:
-* To generate clean url alias for you articles from the title for example
+* To generate clean url alias for your articles from the title for example
 ```js
 const urlAlias = strToMachinename('My awesome article title', '-');
 //=> my-awesome-article-title
 ```
-* or to generate clean username from first name and last name of your user entity. 
+* or to generate clean username from *first name* and *last name* of your user entity. 
 ```js
 const username = strToMachinename('First name ' + 'Last Name', '_');
 //=> first_name_last_name
@@ -27,13 +27,13 @@ $ npm install str-to-machinename
 ```js
 const strToMachinename = require('str-to-machinename');
 
-strToMachinename('C\'est une phrase française avec des accenté éàçàçéìù', '_');
+strToMachinename("C'est une phrase française avec des accenté éàçàçéìù", '_');
 //=> 'cest_une_phrase_francaise_avec_des_accente_eacaceiu'
 
-strToMachinename('C\'est une phrase française avec des accenté éàçàçéìù', '-');
+strToMachinename("C'est une phrase française avec des accenté éàçàçéìù", '-');
 //=> 'cest-une-phrase-francaise-avec-des-accente-eacaceiu'
 
-strToMachinename('C\'est une phrase française avec des accenté éàçàçéìù', '/');
+strToMachinename("C'est une phrase française avec des accenté éàçàçéìù", '/');
 //=> 'cest/une/phrase/francaise/avec/des/accente/eacaceiu'
 ```
 
