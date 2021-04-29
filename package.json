@@ -6,7 +6,11 @@
   "scripts": {
     "test": "xo && ava"
   },
-  "author": "Azz-eddine BERRAMOU <azedine.berramou@gmail.com>",
+  "author": {
+    "name": "Azz-eddine BERRAMOU",
+    "email": "azedine.berramou@gmail.com",
+    "url": "https://www.berramou.com"
+  },
   "license": "MIT",
   "keywords": [
     "machinename",
