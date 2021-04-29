@@ -1,13 +1,13 @@
 'use strict';
 
 /**
-*	Convert string to machine name.
+*	Convert string to machinename.
 *
 *	@param {string} input Input string to convert.
 *	@param {string} separator Separator used for convertion.
 *	@returns {string} Converted string.
 */
-const strToMachineName = (input, separator) => {
+const strToMachinename = (input, separator) => {
 	if (typeof input !== 'string') {
 		throw new TypeError('Expected a string');
 	}
@@ -28,4 +28,4 @@ const strToMachineName = (input, separator) => {
 	return input;
 };
 
-module.exports = strToMachineName;
+module.exports = strToMachinename;
