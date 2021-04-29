@@ -1,6 +1,6 @@
 # StrToMachineNmae
 
-> Convert an string to machine name with selected separator: `Foo bar baz faz` → `foo_bar_baz_faz`
+> Convert string to machinename with selected separator: `Foo bar baz faz` → `foo_bar_baz_faz`
 
 ### Cases you may need this for:
 * To generate clean url alias for your articles from the title for example
