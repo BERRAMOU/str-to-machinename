@@ -3,15 +3,22 @@
   "version": "1.0.0",
   "description": "Convert an string into a machine name with selected separator: `Foo bar baz faz` → `foo_bar_baz_faz`",
   "main": "index.js",
-  "files": [
-    "index.js",
-    "index.d.ts"
-  ],
   "scripts": {
     "test": "xo && ava && tsd"
   },
   "author": "Azz-eddine BERRAMOU <azedine.berramou@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "machinename",
+    "url",
+    "pretty",
+    "dash",
+    "hyphen",
+    "underscore",
+    "string",
+    "text",
+    "convert"
+  ],
   "devDependencies": {
     "ava": "^1.4.1",
     "tsd": "^0.7.1",
